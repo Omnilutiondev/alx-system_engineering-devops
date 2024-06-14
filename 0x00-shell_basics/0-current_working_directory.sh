@@ -1,5 +1,5 @@
 #!/bin/bash
-echo -e "#!/bin/bash $pwd
+echo -e "The current working directory is: $(pwd)"
 
 
 
