@@ -1,2 +1,2 @@
 #!/bin/bash 
-echo -e "Applications Documents Dropbox Movies Pictures\nDesktop Downloads Library Music Public"
+echo -e "0-current_working_directory :1-listit\nREADME.md	
