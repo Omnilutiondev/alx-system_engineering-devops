@@ -1,5 +1,5 @@
 #!/bin/bash 
-echo -e "./0-current_working_directory#!/bin/bash\nThe current working directory is: $(pwd)" > 0-current_working_directory
+echo "#!/bin/bash echo The current working directory is: $(pwd)" > 0-current_working_directory
 
 
 
