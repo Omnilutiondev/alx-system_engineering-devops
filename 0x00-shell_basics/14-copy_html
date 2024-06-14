@@ -1,7 +1,2 @@
 #!/bin/bash
-for file in *.html; do
-    if [ ! -e "../$file" ] || [ "$file" -nt "../$file" ]; then
-        cp "$file" ../
-        echo "Copied $file to parent directory"
-    fi
-done
+rsync -avu --include='*.html' --include='*/' --exclude='*' ./ ../
