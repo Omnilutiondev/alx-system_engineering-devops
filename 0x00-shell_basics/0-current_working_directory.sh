@@ -1,2 +1,2 @@
 #!/bin/bash 
-echo -e "#!/bin/bash\n$(pwd)" > 0-current_working_directory
+echo -e "#!/bin/bash\npwd$(pwd)" > 0-current_working_directory
