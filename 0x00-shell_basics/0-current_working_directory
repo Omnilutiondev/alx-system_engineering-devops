@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -e "The current working directory is: $(pwd)"
+echo -e "The current working directory is: $(pwd)"/root/alx-system_engineering-devops/0x00-shell_basics
