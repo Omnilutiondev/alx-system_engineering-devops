@@ -1,6 +1,5 @@
 #!/bin/bash
-echo -e ""$(pwd)> 0-current_working_directory
-
+echo -e "#!/bin/bash $pwd\n$(pwd)" > 0-current_working_directory
 
 
 
