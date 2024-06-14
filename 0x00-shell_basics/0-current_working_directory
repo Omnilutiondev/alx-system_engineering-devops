@@ -1,1 +1,2 @@
-#!/bin/bash echo The current working directory is: /alx-system_engineering-devops/0x00-shell_basicsin/bash #!/bin/bash echo "The current working directory is: $(pwd)"in/bash
+./0-current_working_directory
+The current working directory is: /alx-system_engineering-devops/0x00-shell_basics
