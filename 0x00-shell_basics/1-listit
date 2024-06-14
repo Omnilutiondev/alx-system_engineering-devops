@@ -1,2 +1,2 @@
-#!/bin/bash 
-echo -e "0-current_working_directory :1-listit\nREADME.md	
+#!/bin/bash
+ls -l 
