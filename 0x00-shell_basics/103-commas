@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -a | awk -F'\n' '{for(i=1;i<=NF;i++) {split($i,a,"/"); if(length(a[1])>0 && (a[1]~"^[0-9a-zA-Z]+$")) printf("%s%s", a[1], (i==NF)?"":",")}}' | sort -n -t',' -k1,1 | sed '1i.,../' | tr '\n' ',' | sed 's/,$//'
+ {ls -a | awk -F'\n' '{for(i=1;i<=NF;i++) {split($i,a,"/")| if(length(a[1])>0 && a[1]~"^[0-9a-zA-Z]+$") printf("%s%s",a[1],(i==NF)?"":",")}}' | sort -n -t',' -k1,1 | sed '1i.,..,/' | tr '\n' ',' | sed 's/,$/\n'}
