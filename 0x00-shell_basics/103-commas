@@ -1,2 +1,2 @@
 #!/bin/bash
-echo -n './, ../, '; ls -1v | grep -v '^\./$' | grep -v '^../$' | awk '/\/$/ && !/^\.$/ {printf "%s, ", $0} !/\/$/ {print}' | sed 's/, $/\n/'
+echo -n './, ../, '; ls -1v | grep -v '^\./$' | grep -v '^../$' | awk '{if(/\/$/) printf "%s, ", $0; else print}' | sed 's/, $/\n/'
