@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1pa | grep -v '^\./$' | grep -v '^../$' | awk '{print (NF && $0 ~ /\/$/ ? $0 : $0 "/")}' | LC_COLLATE=C sort -k1.2 | awk 'BEGIN {printf "./, ../, "} {printf "%s, ", $0}' | sed 's/, $/\n/'
+find . -maxdepth 1 -mindepth 1 \( -type d -printf '%p/,' -o -type f -printf '%p,' \) | LC_COLLATE=C sort -k1.2 | awk 'BEGIN {printf "./, ../, "} {gsub(/^\.\//, ""); printf "%s", $0} END {print ""}'
