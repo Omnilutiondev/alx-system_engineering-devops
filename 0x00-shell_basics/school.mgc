@@ -1,2 +1,2 @@
 #!/bin/bash
-printf '0 string SCHOOL School data file\n' > school.mgc
+printf '0 string SCHOOL School data file\n' > school.mgc && find . -type f -exec sh -c '[ -f school.mgc ] && file -m school.mgc "$1"' sh {} \;
