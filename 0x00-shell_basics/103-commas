@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -1pa | grep -v '^\./$' | grep -v '^../$' | awk '{print $0","}' ORS='' | sed 's/,$/\n/'
