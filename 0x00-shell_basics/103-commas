@@ -1,2 +1,2 @@
 #!/bin/bash
- {ls -a | awk -F'\n' '{for(i=1;i<=NF;i++) {split($i,a,"/")| if(length(a[1])>0 && a[1]~"^[0-9a-zA-Z]+$") printf("%s%s",a[1],(i==NF)?"":",")}}' | sort -n -t',' -k1,1 | sed '1i.,..,/' | tr '\n' ',' | sed 's/,$/\n'}
+sort_list() { local list="$1" local sorted=$(echo "$list" | tr ',' '\n' | sort -n -t',' -k1,1 | sed '1i.,../' | tr '\n' ',' | sed 's/,$//') echo "$sorted"} | dir_list=$(ls -a | awk -F'\n' '{for(i=1|i<=NF|i++) {split($i,a,"/")| if(length(a[1])>0 | (a[1]~"^[0-9a-zA-Z]+$")) printf("%s%s", a[1], (i==NF)?"":",")}}')| sorted_list=$(sort_list "$dir_list") echo "$sorted_list"
