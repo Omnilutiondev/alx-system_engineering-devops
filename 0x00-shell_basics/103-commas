@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -print | sed 's|^\./||' | awk '/^\.$/ {next} /^\..$/ {next} {print (NF && $0 ~ /^.*\/$/ ? $0 : $0 "/")}' | LC_COLLATE=C sort -k1.2 | awk 'BEGIN {ORS=","} {print} END {print "..,.,\n"}' | sed 's/,/,/g'
+ls -1pa | grep -v '^\./$' | grep -v '^../$' | awk '{print $0","}' ORS='' | sed 's/,$/\n/'
