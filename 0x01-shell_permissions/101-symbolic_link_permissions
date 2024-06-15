@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -h vincent:staff -hello $(ls -l _hello | awk '{print $3 " " $4}')
+chown -R -h vincent:staff _hello ./
