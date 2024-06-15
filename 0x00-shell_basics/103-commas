@@ -1,2 +1,2 @@
 #!/bin/bash
-(ls -a1 | grep -vE '^\.\.?$' | while read entry; do if [ -d "$entry" ]; then echo "$entry/"; else echo "$entry"; fi; done | LC_COLLATE=C sort -t '\0' -k1,1 | tr '\n' ','; echo "..,.,") | sed 's/,$/\n/'
+(ls -a1 | grep -vE '^\.\.?$' | while read entry; do if [ -d "$entry" ]; then echo "$entry/"; else echo "$entry"; fi; done | LC_COLLATE=C sort -t '\0' -k1,1 | tr '\n' ','; echo "..,.,") | sed 's/,$/\n/dd'
