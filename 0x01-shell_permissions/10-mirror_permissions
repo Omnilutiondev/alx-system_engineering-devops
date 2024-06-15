@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod --mirror hello
+chmod 357 hello
