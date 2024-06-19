@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello, World \necho cat -e"
+echo "Hello, World" \n "echo cat -e"
