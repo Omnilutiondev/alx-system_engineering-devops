@@ -1,2 +1,2 @@
 #!/bin/bash
-value1="(Ôo)' echo "value1"
+echo "\ "(Ôo)'"
