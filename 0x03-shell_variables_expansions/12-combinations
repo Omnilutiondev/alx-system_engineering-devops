@@ -1,2 +1,2 @@
 #!/bin/bash
-echo '%s\n' {a..n}{a..z} {p..z}{a..z} | grep -v 'oo'
+echo {a..n}{a..z}{p..z}{a..l} | tr ' ' '\n' | grep -v 'oo' | head -n 64
