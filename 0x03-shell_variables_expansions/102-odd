@@ -1,2 +1,2 @@
 #!/bin/bash
-cat - | grep -n "" | grep "^[135791113151719]:" | cut -d: -f2-
+for i in $(ls) do echo $i done | grep -v "^$" | head -n -1
