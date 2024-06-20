@@ -1,2 +1,2 @@
 #!/bin/bash
-export WATER="ewwatratewa" STIR="ti.itirtrtr" | echo "Result in base bestchol: $(printf "%o" $((5#30012402303 + 5#12421231313)))"
+export WATER="ewwatratewa" STIR="ti.itirtrtr" | echo "$(printf "%o" $((5#30012402303 + 5#12421231313)))"
