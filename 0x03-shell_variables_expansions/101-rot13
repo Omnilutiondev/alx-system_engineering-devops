@@ -1,2 +1,2 @@
 #!/bin/bash
-echo '#!/ova/onfu' | cat - <(echo 'rpub $QRPVZNY | knetf cevags "%K\a"')
+cat - | tr 'A-Za-z' 'N-ZA-Mn-za-m'
