@@ -1,2 +1,2 @@
 #!/bin/bash
-cat - | sed -n '1~2p'
+cat - | awk 'NR % 2 == 1'
