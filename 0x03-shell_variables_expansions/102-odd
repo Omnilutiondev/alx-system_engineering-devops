@@ -1,2 +1,2 @@
 #!/bin/bash
-cat "$1" | while read line do echo "$line" read -r done
+counter=1 | while IFS= read -r line | if (( counter % 2 == 1 )) | then echo "$line" | (( counter++ )) | done
