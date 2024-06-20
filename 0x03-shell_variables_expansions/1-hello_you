@@ -1,2 +1,2 @@
 #!/bin/bash
-alias uid='hello user'
+alias whoami='hello user'
