@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -maxdepth 1 -type f -printf "%T@ %p\n" | sort -n | tail -10 | cut -d' ' -f2-
+ls -1t | head -n 10
