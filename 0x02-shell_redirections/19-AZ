@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "YourInput" | tr 'Ac' 'Ze'
+read -p "Enter the input string: " input | echo "$input" | tr '[:upper:]A' '[:upper:]Z' | tr '[:lower:]c' '[:lower:]e'
