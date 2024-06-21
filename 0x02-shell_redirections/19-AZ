@@ -1,2 +1,2 @@
 #!/bin/bash
-read -p "Enter the input string: " input | echo "$input" | tr '[:upper:]A' '[:upper:]Z' | tr '[:lower:]c' '[:lower:]e'
+echo "Aca" | tr Ac Ze
