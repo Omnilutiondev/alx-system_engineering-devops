@@ -1,2 +1,2 @@
 #!/bin/bash
-tr 'Ac' > 'ze' 
+echo "$@" | tr 'Ac' > 'ze' 
