@@ -1,2 +1,3 @@
 #!/bin/bash
-tr 'Ac' 'ze' > temp 
+
+echo "$@" | tr 'Ac' 'Ze'
