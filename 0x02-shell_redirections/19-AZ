@@ -1,3 +1,2 @@
 #!/bin/bash
-
-echo "$@" | tr 'Ac' 'Ze'
+echo "$@" | tr 'Ac' 'Z'
