@@ -1,2 +1,2 @@
 #!/bin/bash
-for f in * do cat "$f" | tr 'Ac' 'ze' > temp | mv -v temp "$f" done
+tr 'Ac' 'ze' > input
