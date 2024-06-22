@@ -1,2 +1,2 @@
 #!/bin/bash
-tr 'Ac' > 'ze'
+for f in * do cat "$f" | tr 'Ac' 'ze' > temp | mv -v temp "$f" done
