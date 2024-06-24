@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -dF '[!.]*' '*'/ '*' | sed 's/^/"/' | sed 's/$/"/' | tr '\n' ',' | sed 's/^/\./,..\,/g' | sed 's/,$/\n/' | tr -d '"'
+ls -dF * | tr '\n' ',' | sed 's/^/\./,..\,/g' | sed 's/,/$/,/' | sed 's/,$/\n/'
