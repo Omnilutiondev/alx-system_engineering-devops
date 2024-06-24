@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s, " $(ls -v1pa | grep -v / | sort --sort=version; ls -d . .. */)
+ls -adF '[!.]*' '*'/ '*' | sed 's/^/\0,/; s/^,//' | sort -n | sed 's/,/$/,/'
