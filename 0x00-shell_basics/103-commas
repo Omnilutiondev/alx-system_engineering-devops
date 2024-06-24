@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -dF * | tr '\n' ',' | sed 's/^/\./,..\,/g' | sed 's/,/$/,/' | sed 's/,$/\n/'
+ls -mapF '*'/ '*' | tr '\n' ',' | sed 's/^/\./,..\,/g' | sed 's/,$/\n/'
