@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "0 string SCHOOL" > school.mgc
+if hexdump -n 6 -o "%c" "$1" | grep -q "SCHOOL" then echo "$1: School data file" else echo "$1: Not a School data file"
