@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -adF '[!.]*' '*'/ '*' | sed 's/^/\0,/; s/^,//' | sort -n | sed 's/,/$/,/'
+ls -adF '[!.]*' '*'/ '*' | sed 's/^/\0,/' | sed 's/^,//' | sort -n | sed 's/,/$/,/' | tr -d '\n' | echo
