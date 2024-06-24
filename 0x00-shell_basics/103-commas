@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -adF '[!.]*' '*'/ '*' | sed 's/^/\0,/' | sed 's/^,//' | sort -n | sed 's/,/$/,/' | tr -d '\n' | sed 's/,/, /g' | sed 's/, $/,/' | echo -e "\./, ../, $(echo "$@" | tr -d '\n')"
+ls -adF '[!.]*' '*'/ '*' | sed 's/^/\0,/' | sed 's/^,//' | sort -n | sed 's/,/$/,/' | tr -d '\n' | sed 's/,/, /g' | sed 's/, $/,/' | echo -e "\./, ../, $(ls | grep -v '^.\./' | tr '\n', ' ')"
