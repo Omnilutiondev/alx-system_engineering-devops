@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -mapF '*'/ '*' | tr '\n' ',' | sed 's/^/\./,..\,/g' | sed 's/,$/\n/'
+ls -amvp
