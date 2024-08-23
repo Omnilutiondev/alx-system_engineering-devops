@@ -1,3 +1,2 @@
 #!/bin/bash
-find . -empty | sed 's|^\./||' | sort | tr '\n' '\0' | xargs -0 -n1 -I{} sh -c 'echo "{}"; [ -d "{}" ] || [ ! -s "{}" ]' | sed '/^$/d'
-echo
+find . -empty | rev | cut -d/ -f1 | rev
