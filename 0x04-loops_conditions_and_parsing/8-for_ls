@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# This bash script displays
 
-#the contents of a current directory
-#in the list format
-#with only part of the filenames after the first dash
+# This bash script displays
+# the contents of a current directory
+# in the list format
+# with only part of the filenames after the first dash
 
 list=$(ls)
 for filez in list; do
