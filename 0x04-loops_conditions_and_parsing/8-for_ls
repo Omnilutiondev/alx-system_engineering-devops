@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-#This bash script displays
+# This bash script displays
 
-#the contents of a current directory
-#in the list format
-#with only part of the filenames after the first dash
+# the contents of a current directory
+# in the list format
+# with only part of the filenames after the first dash
 
-list=$(ls)
-for idx in $list; do
-  echo "$idx" | cut -d '-' -f2
+for filez in *
+do
+    echo "$filez" | cut -d '-' -f 2-
 done
