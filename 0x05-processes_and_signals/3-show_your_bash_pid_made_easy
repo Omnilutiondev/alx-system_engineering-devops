@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # This script displays PID and process name of processes containing word bash
 
-pgrep bash | xargs -I {} echo "{} $(cat /proc/{}/comm)"
+awk '/bash/ {print "PID: " $1 " - Name: " $2}' /proc/[0-9]*/comm
