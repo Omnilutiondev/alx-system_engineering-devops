@@ -1,8 +1,4 @@
 #!/usr/bin/env bash
 # This script loops every 2 seconds
 
-for (( ; ; )); do
-  echo "To infinity and beyond!"
-  sleep 2
-done
-
+watch -n 2 echo "To infinity and beyond!"
