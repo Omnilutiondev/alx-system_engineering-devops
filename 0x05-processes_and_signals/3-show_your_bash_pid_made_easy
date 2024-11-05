@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
 # This script displays PID and process name of processes containing word bash
 
-awk '/bash/ {print "PID: " $1 " - Name: " $2}' /proc/[0-9]*/comm
+for pid in /proc/[0-9]*; do
+  name=$(cat "$pid/comm")
+  if [[ "$name" == "bash" ]]; then
+    echo "${pid##*/} $name"
+  fi
+done
+
