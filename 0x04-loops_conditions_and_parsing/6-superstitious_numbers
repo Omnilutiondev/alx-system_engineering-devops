@@ -4,15 +4,23 @@
 #diplays 9 and bad luck from japan for the 9th loop iteration
 #diplays 17 and bad luck from italy for the 17th loop iteration
 
-count=1
+idx=1
 
-while [ $count -le 20 ]
+while [ $idx -le 20 ]
+
 do
-  echo "$count"
-  case $count in
-    "4") echo "bad luck from China";;
-    "9") echo "bad luck from Japan";;
-    "17") echo "bad luck from Italy";;
+  echo "$idx"
+  case $idx in
+    4)
+	    echo "bad luck from China"
+	    ;;
+    9)
+	    echo "bad luck from Japan"
+	    ;;
+    17)
+	    echo "bad luck from Italy"
+	    ;;
+
   esac
-  (( count++ ))
+  (( idx++ ))
 done
