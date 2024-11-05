@@ -6,7 +6,7 @@
 # with only part of the filenames after the first dash
 
 list=$(ls)
-for filez in *
+for filez in list
 do
   echo "$filez" | cut -d '-' -f 2-
 done
