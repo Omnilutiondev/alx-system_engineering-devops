@@ -7,5 +7,5 @@
 
 list=$(ls)
 for filez in list; do
-  echo "$filez" | cut -d '-' -f 2-
+  echo "$filez" | cut -d '-' -f2
 done
