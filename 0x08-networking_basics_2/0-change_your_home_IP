@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# This bash script configures Ubuntu server to meet the specified requirements
+
+# Update the /etc/hosts file
+echo "127.0.0.2 localhost" | sudo tee -a /etc/hosts
+echo "8.8.8.8 facebook.com" | sudo tee -a /etc/hosts
+
+# And Reload the DNS resolver to apply changes
+sudo systemctl restart systemd-resolved
