@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 # This bash script displays all the active IPv4 IPs on the machine
 
-
 ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | cut -b 11-
+
 # It uses ip command to get list of active interfaces
 interfaces=$(ip -o -4 addr show | awk '{print $2}' | sed 's/:$//')
 
