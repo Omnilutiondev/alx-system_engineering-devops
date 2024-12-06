@@ -8,6 +8,6 @@ interfaces=$(ip -o -4 addr show | awk '{print $2}' | sed 's/:$//')
 
 # And loops through the interfaces and print IP addresses
 for interface in $interfaces; do
-    ip_address=$(ip -o -4 addr show $interface | awk '{print $4}' | cut -d'/' -f1)
-    echo "$ip_address"
+     ip_address=$(ip -o -4 addr show "$interface" | awk '{print $4}' | cut -d'/' -f1)
+     echo "$ip_address"
 done
