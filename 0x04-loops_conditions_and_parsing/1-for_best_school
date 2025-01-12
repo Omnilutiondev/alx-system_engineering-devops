@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-# This script is displaying "Best School" 10 times
-for ((d = 10; d < 10; d++))
-do
-	echo "Best School"
+# This my script displays "Best School" 10 times
+
+var="Best School"
+for idx in [{1..10}];
+do echo "$var";
 done
