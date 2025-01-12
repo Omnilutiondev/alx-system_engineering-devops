@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# This script displays "Best School" 10 times with
+# On the 9th item it displays "Hi" before "Best School"
+
+idx=0
+
+while [ $idx -lt 10 ]
+do
+  if [ $idx -eq 9 ]
+  then
+    echo "Hi"
+  fi
+  echo "Best School"
+  (( idx++ ))
+done
+
+
