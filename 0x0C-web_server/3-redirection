@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# This script configures an Ubuntu machine
+# so that it redirects from one page to another page
+
+apt-get update -y
+apt-get install nginx -y
+ufw allow 80
+sh -c 'echo "Hello World!" > /var/www/html/index.html'
+sed -i '/listen 80 default_server/a rewrite ^/redirect_me https://www.microsoft.com/ permanent;' /etc/nginx/sites-available/default
+service nginx restart
