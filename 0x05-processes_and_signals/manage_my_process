@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This script that processes management
+# This script will process to practice process management
 true=0
 while [ $true ]; do
 echo 'I am alive' >> /tmp/my_process
