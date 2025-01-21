@@ -3,8 +3,7 @@
 # the contents of a current directory
 # in the list format
 # with only part of the filenames after the first dash
-
 list=$(ls)
-for idx in list; do
-  echo "$idx" | cut -d '-' -f2
+for i in $list; do
+  echo "$i" | cut -d '-' -f2
 done
