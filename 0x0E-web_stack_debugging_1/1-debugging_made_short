@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Reconfigure nginx on port 80 shorter
+cat /etc/nginx/sites-available/default > /etc/nginx/sites-enabled/default
+sudo service nginx restart
+rm /run/nginx.pid
