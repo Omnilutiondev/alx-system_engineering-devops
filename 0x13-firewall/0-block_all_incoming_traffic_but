@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# This bash script will install the ufw firewall and setup a few rules on my web-01 server.
+# This bash script installs the ufw firewall and setups rules on my web-01 server.
 
 sudo apt install -y ufw
 sudo ufw default allow outgoing
